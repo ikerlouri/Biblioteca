@@ -46,11 +46,28 @@ public class Formulario {
 		return titulo;
 
 	}
+	public static Socio pedirSocio() {
+		Socio socio = new Socio();
+		System.out.println("Introduce nombre:");
+		socio.setNombre(scan.nextLine());
+		System.out.println("Introduce apellido:");
+		socio.setApellido(scan.nextLine());
+		System.out.println("Introduce direccion:");
+		socio.setDireccion(scan.nextLine());
+		System.out.println("Introduce poblacion:");
+		socio.setPoblacion(scan.nextLine());
+		System.out.println("Introduce provincia:");
+		socio.setProvincia(scan.nextLine());
+		System.out.println("Introduce DNI:");
+		socio.setDNI(scan.nextLine());
+		
+		return socio;
+	}
 	public static String getDNI() {
 		String DNI;
 		System.out.println("Introduce tu DNI:");
 		DNI = scan.nextLine();
 		return DNI;
-		
 	}
+	
 }

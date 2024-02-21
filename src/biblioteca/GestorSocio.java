@@ -19,9 +19,7 @@ public class GestorSocio {
 			break;
 		case Menu.INSERTAR_SOCIO:
 			libro = Formulario.pedirLibro();
-
 			GestorBBDD.insertarSocio();
-			
 			System.out.println("Insertado correctamente");
 			break;
 		case Menu.ELIMINAR_SOCIO:
